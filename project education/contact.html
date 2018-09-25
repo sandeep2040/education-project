@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mdb.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Navbar in Bootstrap4</title>
+</head>
+<body>
+    
+   <nav class="navbar navbar-dark navbar-expand-xl bg-info ">
+        <div class="container">
+            <a  href="Campus.html" class="navbar-brand">
+                Education </a>
+            <button class="navbar-toggler" data-toggle="collapse"
+                    data-target="#dropdownNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="dropdownNavBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a  href="#" class="nav-link">Home</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item dropdown">
+                        <a  href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">JobSeeker</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">PostYourProfile</a>
+                            
+                            
+                            
+                            
+                            
+                            
+                    <li class="nav-item dropdown">
+                        <a  href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trainer</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">PostYourProfile</a>
+                             <a href="#" class="dropdown-item">PostYourExams</a>
+                            
+                            <li class="nav-item">
+                        <a href="#" class="nav-link">SearchAdmissions</a>
+                    </li>
+                            
+                            
+                            
+                             <li class="nav-item dropdown">
+                        <a  href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">OtherServices</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Training</a>
+                             <a href="#" class="dropdown-item">Placements</a>
+                             <a href="#" class="dropdown-item">Workshops</a>
+                             <a href="#" class="dropdown-item">OverseasEDUCATION</a>
+                            
+                    
+                    <li class="nav-item">
+                        <a  href="contact.html" class="nav-link">ContactUs</a>
+                    </li>
+                    
+                        </div>
+                    </li>
+                        </div>
+                            </li>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+       </div>
+    </nav>
+    
+ <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+        <form name="myForm" onsubmit="myFun()">
+    <div>
+        <label for="inputUserName">Username</label>
+        <input type="text" id="UserName" name="username" />
+        <span id="abcd"></span>
+    </div>
+    <div>
+        <label for="inputPassword">Password</label>
+        <input type="password" id="password"  name="password" />
+        <span id="Messagee"></span>
+        
+        
+        
+        
+        <label for="inputPassword">Password</label>
+        <input type="password" id="passwords" name="passwords" />
+        <span id="Messages"></span>
+    </div>
+            
+            
+            <label for="E-mail">E-mail</label>
+        <input type="E-mail" id="E-mail" name ="Email"/>
+            <span id="Message"> </span>
+            
+            <textarea class="form-control"></textarea>
+            <input type="submit" class="btn btn-success">
+            </form>
+        </div>
+       
+    
+    
+    
+        <div class="col-md-6">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.318776303886!2d78.3827233148771!3d17.444450138044434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb938c37cb2e71%3A0x6946a56e78df19d9!2sMarvell+info+systems!5e0!3m2!1sen!2sin!4v1536562833100" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+         </div>
+    </div>
+</body>
+    
+    <!-- BODY ENDS -->
+<script src="assets/js/fontawesome-all.js"></script>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/mdb.min.js"></script>
+    
+    
+
+
+
+
+
+
+<script>
+function myFun() {
+	var a = document.myForm.E-
+        
+        
+        
+        
+        
+        
+        
+        
+        mail.value;     // raju@gmail.com
+	if(a.indexOf('@')<=0) {   //@gmail.com
+		document.getElementById("Message").innerHTML ="Invalid @ position ";
+		return false;
+	}
+	//thapa@gmail.com  
+	if(a.charAt(a.length-4)!='.') {
+		document.getElementById("Message").innerHTML ="Invalid . position ";
+		return false;
+	}
+	//thapa@gmail.co
+	if(a.charAt(a.length-3)!='.') {
+		document.getElementById("Message").innerHTML ="Invalid . position ";
+		return false;
+	}
+	
+
+}
+    
+    
+    
+    var ab = document.getElementById("password").value;   
+	var b = document.getElementById("passwords").value;  
+
+	if(ab == "") {  
+		document.getElementById("Messagee").innerHTML ="Please Fill Password";
+		return false;
+	}
+	
+	if(ab.length<5) {
+		document.getElementById("Messagee").innerHTML ="Please Enter five characters ";
+		return false;
+	}
+	
+	if(ab.length>20) {
+		document.getElementById("Messagee").innerHTML ="Please Enter less than 20 characters ";
+		return false;
+	}
+	
+	if(ab!=b){
+		document.getElementById("Messages").innerHTML ="Password Mismatch ";
+		return false;
+	}
+    
+    
+    var correct_way = /^[A-Za-z]+$/;
+	var abc = document.getElementById("UserName").value;   
+	if(abc == "") {  
+		document.getElementById("abcd").innerHTML ="Please user name ";
+		return false;
+	}
+	
+	if(abc.length<3) {
+		document.getElementById("abcd").innerHTML ="Please Enter three characters ";
+		return false;
+	}
+	
+	if(abc.length>20) {
+		document.getElementById("abcd").innerHTML ="Please Enter less than 20 characters ";
+		return false;
+	}
+	if(abc.match(correct_way))
+		true;
+	else {
+		document.getElementById("abcd").innerHTML="Only alphabets allowed";
+		return false;
+	}
+
+}
+</script>
+
+
+    
+    
+    
+    
+  
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+            
+    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+    
+
+                  
+
+        
+        
+        
+        
+        
+        
+        
+       
+    
+    
+    
+    
+    
